@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SSL Inspector for macOS</title>
+    <title>SSL Inspector - TLS Certificate Inspector & SHA256 Pin Generator for macOS</title>
     <meta
       name="description"
       content="Inspect SSL/TLS certificate chains, generate SHA256 public key hashes, and export certificates with SSL Inspector for macOS."
@@ -11,7 +11,18 @@
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Kannan R S" />
     <meta name="theme-color" content="#09131e" />
-    <link rel="canonical" href="https://apps.apple.com/us/app/ssl-inspector/id6759235383" />
+    <link rel="canonical" href="https://kriskannan08.github.io/ssl-inspector-site/" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/57/cc/a8/57cca85c-b472-9dac-a218-33e54c36ea36/AppIcon-0-0-85-220-0-5-0-2x.png/512x512bb.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/57/cc/a8/57cca85c-b472-9dac-a218-33e54c36ea36/AppIcon-0-0-85-220-0-5-0-2x.png/512x512bb.png"
+    />
 
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="SSL Inspector" />
@@ -20,7 +31,7 @@
       property="og:description"
       content="Inspect SSL/TLS certificate chains, generate SHA256 public key hashes, and export certificates with SSL Inspector for macOS."
     />
-    <meta property="og:url" content="https://apps.apple.com/us/app/ssl-inspector/id6759235383" />
+    <meta property="og:url" content="https://kriskannan08.github.io/ssl-inspector-site/" />
     <meta
       property="og:image"
       content="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/57/cc/a8/57cca85c-b472-9dac-a218-33e54c36ea36/AppIcon-0-0-85-220-0-5-0-2x.png/512x512bb.png"
@@ -39,6 +50,29 @@
       name="twitter:image"
       content="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/57/cc/a8/57cca85c-b472-9dac-a218-33e54c36ea36/AppIcon-0-0-85-220-0-5-0-2x.png/512x512bb.png"
     />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "SSL Inspector",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "macOS",
+        "description": "Inspect SSL/TLS certificate chains, generate SHA256 public key hashes, and export certificates with SSL Inspector for macOS.",
+        "url": "https://kriskannan08.github.io/ssl-inspector-site/",
+        "downloadUrl": "https://apps.apple.com/us/app/ssl-inspector/id6759235383",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/57/cc/a8/57cca85c-b472-9dac-a218-33e54c36ea36/AppIcon-0-0-85-220-0-5-0-2x.png/512x512bb.png",
+        "offers": {
+          "@type": "Offer",
+          "price": "9.99",
+          "priceCurrency": "USD",
+          "url": "https://apps.apple.com/us/app/ssl-inspector/id6759235383"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Kannan R S"
+        }
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -72,11 +106,12 @@
     <main>
       <section class="hero">
         <p class="eyebrow">macOS Developer Utility</p>
-        <h1>Inspect SSL/TLS Certificates Without Leaving Your Mac.</h1>
+        <h1>Inspect TLS Certificates and Generate SHA256 Pins on macOS</h1>
         <p class="subtitle">
-          SSL Inspector helps you validate certificate chains, check expiry timelines,
-          and generate pinning hashes in seconds.
+          Retrieve full certificate chains, verify expiration, and generate
+          SHA256 public key hashes for SSL pinning in seconds.
         </p>
+        <p class="privacy-badge">Runs entirely offline • No analytics • No tracking</p>
         <div class="hero-actions">
           <a
             class="cta"
@@ -84,10 +119,45 @@
             target="_blank"
             rel="noreferrer"
           >
-            Download for $9.99
+            Download on the Mac App Store
           </a>
           <p class="meta">Requires macOS 26.2 or later</p>
         </div>
+        <div class="hero-features">
+          <span>⚡ Drag & drop certificates</span>
+          <span>🔐 SSL pinning ready hashes</span>
+          <span>📦 Export certificate chains</span>
+        </div>
+      </section>
+
+      <section class="hero-shot">
+        <img
+          src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/1f/15/281f15c1-d119-effc-3610-736fc6350f7d/1.png/800x500bb.jpg"
+          alt="SSL Inspector app screenshot"
+          loading="eager"
+        />
+      </section>
+
+      <section class="why">
+        <h2>Why SSL Inspector?</h2>
+        <p>
+          Developers often rely on command-line tools like OpenSSL to inspect certificates
+          or generate SHA256 public key hashes for SSL pinning.
+        </p>
+        <p>
+          SSL Inspector provides the same insights through a clean macOS interface,
+          making certificate inspection fast and intuitive.
+        </p>
+      </section>
+
+      <section class="workflow">
+        <h2>Typical Workflow</h2>
+        <ol>
+          <li>Enter a domain name</li>
+          <li>Retrieve the certificate chain</li>
+          <li>Copy the SHA256 public key hash</li>
+          <li>Use it for SSL pinning in your app</li>
+        </ol>
       </section>
 
       <section class="highlights">
@@ -103,6 +173,17 @@
           <h2>Export & Download</h2>
           <p>Export certificates in DER format and download individual certs or full chains.</p>
         </article>
+      </section>
+
+      <section class="usecases">
+        <h2>Common Developer Use Cases</h2>
+        <ul>
+          <li>Generate SHA256 hashes for SSL pinning</li>
+          <li>Inspect TLS certificate chains</li>
+          <li>Verify certificate expiration</li>
+          <li>Download and analyze certificate chains</li>
+          <li>Debug TLS configuration issues</li>
+        </ul>
       </section>
 
       <section class="gallery">
