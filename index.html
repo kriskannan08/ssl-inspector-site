@@ -6,7 +6,7 @@
     <title>SSL Inspector - TLS Certificate Inspector & SHA256 Pin Generator for macOS</title>
     <meta
       name="description"
-      content="Inspect SSL/TLS certificate chains, generate SHA256 public key hashes, and export certificates with SSL Inspector for macOS."
+      content="Inspect SSL/TLS certificates, view SAN domains, generate SHA256 public key hashes, and export certificate chains on macOS."
     />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Kannan R S" />
@@ -29,7 +29,7 @@
     <meta property="og:title" content="SSL Inspector for macOS" />
     <meta
       property="og:description"
-      content="Inspect SSL/TLS certificate chains, generate SHA256 public key hashes, and export certificates with SSL Inspector for macOS."
+      content="Inspect SSL/TLS certificates, view SAN domains, generate SHA256 public key hashes, and export certificate chains on macOS."
     />
     <meta property="og:url" content="https://kriskannan08.github.io/ssl-inspector-site/" />
     <meta
@@ -44,7 +44,7 @@
     <meta name="twitter:title" content="SSL Inspector for macOS" />
     <meta
       name="twitter:description"
-      content="Inspect SSL/TLS certificate chains, generate SHA256 public key hashes, and export certificates with SSL Inspector for macOS."
+      content="Inspect SSL/TLS certificates, view SAN domains, generate SHA256 public key hashes, and export certificate chains on macOS."
     />
     <meta
       name="twitter:image"
@@ -57,7 +57,7 @@
         "name": "SSL Inspector",
         "applicationCategory": "DeveloperApplication",
         "operatingSystem": "macOS",
-        "description": "Inspect SSL/TLS certificate chains, generate SHA256 public key hashes, and export certificates with SSL Inspector for macOS.",
+        "description": "Inspect SSL/TLS certificates, view SAN domains, generate SHA256 public key hashes, and export certificate chains on macOS.",
         "url": "https://kriskannan08.github.io/ssl-inspector-site/",
         "downloadUrl": "https://apps.apple.com/us/app/ssl-inspector/id6759235383",
         "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/57/cc/a8/57cca85c-b472-9dac-a218-33e54c36ea36/AppIcon-0-0-85-220-0-5-0-2x.png/512x512bb.png",
@@ -108,8 +108,8 @@
         <p class="eyebrow">macOS Developer Utility</p>
         <h1>Inspect TLS Certificates and Generate SHA256 Pins on macOS</h1>
         <p class="subtitle">
-          Retrieve full certificate chains, verify expiration, and generate
-          SHA256 public key hashes for SSL pinning in seconds.
+          Retrieve full certificate chains, inspect SAN domains, verify expiration,
+          and generate SHA256 public key hashes for SSL pinning in seconds.
         </p>
         <p class="privacy-badge">Runs entirely offline • No analytics • No tracking</p>
         <div class="hero-actions">
@@ -126,6 +126,7 @@
         <div class="hero-features">
           <span>⚡ Drag & drop certificates</span>
           <span>🔐 SSL pinning ready hashes</span>
+          <span>🧾 Inspect SAN domains instantly</span>
           <span>📦 Export certificate chains</span>
         </div>
       </section>
@@ -170,6 +171,13 @@
           <p>Generate SHA256 public key hashes for secure SSL pinning workflows.</p>
         </article>
         <article>
+          <h2>Subject Alternative Name (SAN)</h2>
+          <p>
+            View Subject Alternative Name (SAN) entries for leaf certificates,
+            including wildcard and subdomain coverage.
+          </p>
+        </article>
+        <article>
           <h2>Export & Download</h2>
           <p>Export certificates in DER format and download individual certs or full chains.</p>
         </article>
@@ -180,6 +188,7 @@
         <ul>
           <li>Generate SHA256 hashes for SSL pinning</li>
           <li>Inspect TLS certificate chains</li>
+          <li>Verify SAN domains and wildcard coverage</li>
           <li>Verify certificate expiration</li>
           <li>Download and analyze certificate chains</li>
           <li>Debug TLS configuration issues</li>
